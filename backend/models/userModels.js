@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+// UserSchema created with the mongoose ODM.
 const userSchema = mongoose.Schema(
   {
     name: {

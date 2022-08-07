@@ -16,8 +16,11 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Welcome to Code Support API" });
 });
 
-// Routes
+// Route for user controls
 app.use("/api/users", require("./routes/userRoutes"));
+
+//Route for question controls
+app.use("/api/questions", require("./routes/questionRoutes"))
 
 app.use(errorHandler);
 
