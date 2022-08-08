@@ -10,6 +10,7 @@ const Home = () => {
   return (
     <>
       <section className="heading">
+        <h1>Which programming language do you need help with?</h1>
         {!user && (
           <div
             style={{
@@ -35,8 +36,6 @@ const Home = () => {
             />
           </div>
         )}
-
-        <h1>Which programming language do you need help with?</h1>
       </section>
       {user && (
         <>

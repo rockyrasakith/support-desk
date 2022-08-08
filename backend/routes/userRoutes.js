@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const { registerUser, loginUser, getMe } = require("../controllers/userController");
-const { protect } = require("../middleware/authMiddleware")
+const {
+  registerUser,
+  loginUser,
+  getMe,
+} = require("../controllers/userController");
+const { protect } = require("../middleware/authMiddleware");
 
 // Express API routes
 router.post("/", registerUser);
